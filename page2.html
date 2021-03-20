@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- link to my css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--
+        The navegation bar. The lines 24 to 42 has been sourced from
+        https://www.w3schools.com/
+        Some changes where made by me, including the logo. 
+    -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/home4.png" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="page1.html">HTML</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="page2.html">CSS</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page3.html">JavaScript</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- The main header with an image as background -->
+    <div class="jumbotron jumbotron-fluid homeImg">
+        <h1 class="container">Web Development</h1>
+    </div>
+
+    <!-- The text -->
+    <div class="container">
+        <h2>CSS</h2>
+
+        <p><b>CSS</b> stands for <b>Cascading Style Sheets</b> and it is the language used to give style to a web page.
+            While HTML
+            deal with the page’s structure, CSS deals with how the page looks.</p>
+        <p>A good analogy to make is to think about a web page as a building. All the walls, floors and the steel
+            skeleton are represented by HTML. While all the painting, design and finishing are represented by CSS.
+        </p>
+        <p>As HTML, CSS is not a programming languages for the same reasons. It does not perform any programmed
+            task and its purpose is only to design the layout for a page.</p>
+
+        <h2>How does CSS work?</h2>
+
+        <p>Let’s start with an example. The following HTML code represents a heading followed by a paragraph:
+        </p>
+        <p><code>&lth1&gtThis is my heading&lt/h1&gt</code><br><code>&ltp&gtSome text written here.&lt/p&gt</code></p>
+        <p>In order to change the heading colour to red and the paragraph font family to arial, we would write the
+            following CSS code:
+        </p>
+        <p><code>h1 {colour: red;}</code><br><code>p {font-family: Arial;}</code></p>
+        <p>Note that the coding structure of CSS is formed by a selector (ex: h1) followed by semi columns, embedding a
+            property (ex: colour), with some value (ex: red) attached to it. </p>
+        <p>The selector refers to which HTML element the CSS code is interacting and the property is some characteristic of
+            this element which has a value attached to it.</p>
+        <p style="color:green;">Another good example is the colour of this paragraph that was given the value “green”
+            using CSS code.
+        </p>
+        <p>These were only some examples of CSS, but in fact, the properties of elements and the values that you can
+            give to it are numerous and it allows you to change anything that you want in your page.</p>
+        <p>Another important thing to mention is that there are three ways to apply CSS code to your HTML page:</p>
+        <ul>
+            <li>Internal</li>
+            <li>Inline</li>
+            <li>External</li>
+        </ul>
+        <p>Internal style sheets are written in the header of a .html document inside a <code>&ltstyle&gt</code> tag. It
+            is useful if you want to apply the style to a whole single page.</p>
+        <p>Inline style sheets are written inside a tag. It is useful if you want to give style for a single element
+            inside your page. As it already indicates which element you want to modify, the code is written a bit
+            different and it would look like this if you wanted to change a single heading colour:</p>
+        <p><code>&lth1 style=”color:red;”&gtThis is my heading&lt/h1&gt</code></p>
+        <p>Finally, external style sheets are written in a separated <code>.css</code> file and linked to a page by a
+            <code>&ltlink&gt</code> tag placed in the head of the .html document. It is useful when you have more than
+            one page (most of
+            the cases) and you want to apply this style to all of these pages at once.
+        </p>
+        <p>In summary, <b>CSS</b> is the tool that you apply in a <a href="page2.html">HTML</a> file in order to make a
+            web page attractive. However,
+            there are still more that can be made to a web page, you can make it interactive with some scrip language
+            such as <a href="page3.html">JavaScript</a>.</p><br>
+    </div>
+
+    <!-- The footer -->
+    <div class="jumbotron jumbotron-fluid bg-dark" style="margin-bottom:0">
+    </div>
+</body>
+
+</html>

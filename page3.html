@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScrip</title>
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- link to my css file -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- link to my js file -->
+    <script src="js/scrip.js" defer></script>
+</head>
+
+<body>
+
+    <!--
+        The navegation bar. The lines 24 to 42 has been sourced from
+        https://www.w3schools.com/
+        Some changes where made by me, including the logo. 
+    -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="index.html">
+            <img src="img/home4.png" alt="logo" style="width:40px;">
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="page1.html">HTML</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">CSS</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="page3.html">JavaScript</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- The main header with an image as background -->
+    <div class="jumbotron jumbotron-fluid homeImg">
+        <h1 class="container">Web Development</h1>
+    </div>
+
+    <!-- The text -->
+    <div class="container">
+        <h2>JavaScript</h2>
+
+        <p><b>JavaScrip</b>t is a script language or a programming language used to make a web page interactive and
+            dynamic. In a building analogy, JavaScript would be everything that gives functionality to a building,
+            such as light, elevators and running water. While HTML would be the structure and CSS would be the style of
+            the building.
+        </p>
+        <p>Beside <a href="page1.html">HTML</a> and <a href="page2.html">CSS</a>, JavaScript creates the whole foundation for a web page. It is a must learn for every web
+            developer. Before its creation, web pages were statics without any type of interaction. Implementing a
+            script language to a web page brings the user experience to a higher level.
+        </p>
+
+        <h2>How does JavaScript work?</h2>
+
+        <p>It works by performing programmed tasks on the client’s machine without the need to interact with a server,
+            for this reason, it is known as a client-side script.
+        </p>
+        <p>For example, if you have a loaded web page on your browser and suddenly you lost the internet connection, you
+            can still have access to the interacting elements on the page, such as animations or dropdown menus.
+        </p>
+        <p>Another good example of the power of a script language is the search engine on many web page. When you enter
+            some text in Google’s search box, it automatically completes the text for you before you finish typing and
+            at the same time gives you some alternative search suggestions. It is only possible thanks to script
+            languages such as JavaScript.
+        </p>
+        <p>On this page, you can see that every time you reload it, an alert pops up to you saying “Welcome to this
+            page, enjoy your reading!”. It was made with the following JavaScript code:</p>
+        <p><code>alert('Welcome to this page, enjoy your reading!');</code></p>
+        <p>The <code>alert()</code> method displays an alert message every time the page is loaded.
+        </p>
+        <p>In the next example, JavaScript changes the image displayed depending on which button the user choose to
+            click. When the user click on “Turn on the light” it displays an image of a yellow bulb, if they click on
+            “Turn off the light” it displays an image of a transparent bulb.
+        </p>
+
+        <div class="container">
+            <!--
+            The light bulb. The lines 95 to 99 has been sourced from
+            https://www.w3schools.com/
+            Some changes where made by me. 
+            -->
+            <button onclick="turnOn()">Turn on the light</button>
+
+            <img id="myImage" src='img/pic_bulboff.gif' style="width: 100px;">
+
+            <button onclick="turnOff()">Turn off the light</button>
+        </div>
+
+        <p>It does it by changing the value of the
+            source attribute of the image with the follwing functions.</p>
+        <p><code>function turnOn() {<br>
+            document.getElementById("myImage").src='img/pic_bulbon.gif';<br> 
+        }<br>
+        function turnOff() {<br>
+            document.getElementById("myImage").src='img/pic_bulboff.gif';<br>
+        }
+        </code></p>
+
+        <p>In order to perform those functions you need to add them inside the element you want the user to interact. In
+            this case, I added the following code inside the <code>&ltbutton&gt</code> tag:</p>
+        <p><code>&ltbutton onclick="turnOn()"&gtTurn on the light&lt/button&gt</code></p>
+        <p><code>&ltbutton onclick="turnOff()"&gtTurn off the light&lt/button&gt</code></p>
+        <p>These were only a few examples of the power of <b>JavaScript</b>. There are numerous other things that this script
+            language allow us to do and that is why it is one of the most popular languages in the World.</p><br>
+    </div>
+
+    <!-- The footer -->
+    <div class="jumbotron jumbotron-fluid bg-dark" style="margin-bottom:0">
+    </div>
+</body>
+
+</html>
